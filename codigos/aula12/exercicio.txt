@@ -1,0 +1,8 @@
+Utilizandos os arquivos ESTATOS.JSON e CIDADES.JSON na pasta, crie um código um código PHP 
+que permita ler os dados dos arquivos e inserir em tabelas de banco de dados criadas com 
+as respectivas estruturas do JSON.
+
+Armazene somente os dados úteis nas tabelas.
+
+Confira se todos os dados foram inseridos corretamente.
+São: 5570 Cidades e 27 Estados (26 + DF)
