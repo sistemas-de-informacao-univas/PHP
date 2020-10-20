@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<script>
+	var estado = {'nome':'Brasil', 'sigla':'BR'};
+	var dados = JSON.stringify(estado);
+	$.ajax({
+		url: 'ajax.php',
+		type: 'POST',
+		data: {data: dados},
+		sucess: function(result){
+			document.write('dados enviados com sucesso!');
+		},
+		error: function(jqXHR, textStatus, errorThrow){
+			document.write('falha ao enviar os dados!');
+		}
+	});
+</script>
+
+<h2>Comnicação AJAX concluida</h2>
+</body>
+</html>
